@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* Type Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .text {
+            color: red !important;
+        }
+
+        /* Class Selector */
+        .text {
+            color: green;
+        }
+
+        /* ID Selector */
+        #intro {
+            color: orange;
+        }
+
+        .text {
+            color: green;
+        }
+
+        #intro {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text">Hello World</p>
+    <p id="intro" class="text">Welcome</p>
+    <p id="intro" class="text" style="color: purple;">Hello CSS</p>
+
+</body>
+
+</html>

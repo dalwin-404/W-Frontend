@@ -1,0 +1,19 @@
+/* p {
+    color: blue;
+    font-size: 40px;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: "Roboto";
+} */
+
+@font-face {
+    font-family: "TROUGH";
+    src: url(TROUG.TTF) format('.TTF');
+}
+
+body {
+    font-family: "TROUGH";
+}

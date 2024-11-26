@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* HTML */
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* BODY */
+        body {
+            background-color: lightcyan;
+            margin: 0;
+        }
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Type Selector */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Class Selector */
+        .heading {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* ID Selector */
+        #welcome {
+            color: green;
+            text-align: center;
+        }
+
+        /* Descendant */
+        .parent p {
+            color: rebeccapurple;
+        }
+
+        /* Multiple Selectors */
+        h2,
+        p {
+            color: navy;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="welcome">
+        <h2 class="heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos quas et ipsum architecto deserunt.</p>
+    </div>
+    <div class="parent">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos quas et ipsum architecto deserunt.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attibute Selectors</title>
+    <style>
+        input[type="text"] {
+            border: 2px solid lightblue;
+            padding: 5px;
+        }
+
+        /* selects element with an attribute that exactly matches the given value */
+        input[type="password"] {
+            border: 2px solid orange;
+            padding: 5px;
+        }
+
+        /* selects element whose attribute value starts with the specified value */
+        input[placeholder^="Enter"] {
+            background-color: lightyellow;
+        }
+
+        button[disabled] {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+
+        /* selects element whose attribute value end with the specified value */
+        a[href$=".pdf"] {
+            color: red;
+            font-weight: bold;
+        }
+
+        [class~="btn"] {
+            color: white;
+            background-color: green;
+        }
+
+        a[href^="https://"] {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <input type="password" placeholder="Enter your password">
+
+        <br><br>
+        <button disabled>submit</button>
+    </form>
+    <br><br>
+    <a href="document.pdf">Download pdf</a><br><br>
+    <a href="" class="btn">Visit Website</a><br>
+    <a href="https://google.com">Visit Google</a>
+</body>
+
+</html>
